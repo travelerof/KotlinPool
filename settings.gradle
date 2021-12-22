@@ -1,0 +1,21 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "KotlinPool"
+include ':app'
+include ':w-bottombar'
+include ':permission'
+include ':dialog'
+include ':log-ui'
+include ':log-crash'
+include ':widget'
+include ':video-core'
+include ':video-ui'
+include ':tools'
+include ':w-shadowview'
+include ':log-core'

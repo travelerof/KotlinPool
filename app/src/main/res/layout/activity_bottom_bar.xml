@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomBarActivity">
+    <com.hyg.widget.bottombar.CustomBottomBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:unSelectedTextColor="#555555"
+        app:selectedTextColor="#ff0000"
+        android:textSize="@dimen/sp_12"
+        android:layout_alignParentBottom="true"/>
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f0f0"
+        android:layout_above="@id/bottom_bar"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/bottom_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_above="@id/bottom_line"/>
+</RelativeLayout>
